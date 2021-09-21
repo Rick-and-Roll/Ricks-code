@@ -101,7 +101,7 @@ async def something():
         try:
             if not WORKING and QUEUE:
                 user = int(OWNER.split()[0])
-                e = await bot.send_message(user, "📥Downloding Queue Files📥")
+                e = await bot.send_message(user, "`Downloding Queue Files…`")
                 dl, file = QUEUE[list(QUEUE.keys())[0]]
                 s = dt.now()
                 tt = time.time()
@@ -117,7 +117,7 @@ async def something():
                                 t,
                                 e,
                                 tt,
-                                "📥Downloading📥",
+                                "`➟ Downloading…`",
                             )
                         ),
                     )
@@ -132,9 +132,9 @@ async def something():
                 hehe = f"{out};{dl};{list(QUEUE.keys())[0]}"
                 wah = code(hehe)
                 nn = await e.edit(
-                    "YOUR FILE IS BEING ENCODED",
+                    "`Encoding Files…` \n**⏳This Might Take A While⏳**",
                     buttons=[
-                        [Button.inline("ENCODING STATS", data=f"stats{wah}")],
+                        [Button.inline("STATS", data=f"stats{wah}")],
                         [Button.inline("CANCEL PROCESS", data=f"skip{wah}")],
                     ],
                 )
@@ -156,14 +156,14 @@ async def something():
                 ees = dt.now()
                 ttt = time.time()
                 await nn.delete()
-                nnn = await e.client.send_message(e.chat_id, "📤.UPLOAING.📤")
+                nnn = await e.client.send_message(e.chat_id, "`🔺Uploading🔺`")
                 with open(out, "rb") as f:
                     ok = await upload_file(
                         client=e.client,
                         file=f,
                         name=out,
                         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                            progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
+                            progress(d, t, nnn, ttt, "`🔺Uploading🔺`")
                         ),
                     )
                 ds = await e.client.send_file(

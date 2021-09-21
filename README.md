@@ -1,9 +1,7 @@
-## `Presenting the newest, best , modified telegram video Encoder`
-
-
+## Just An Ordinary FFMPEG & HandBrakeCLI Powered Encoder/Compressor 🗜️
 ## ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴ ǫᴜᴀʟɪᴛʏ ᴄᴏᴍᴘʀᴇssᴏʀ  
 
-### A Telegram Super Video Encoder 
+### A Telegram Video Encoder 
 
 - `Queue Feature` This bot has queue feature.
 - `Thumbnail Feature` This bot has multiple thumbnail feature.
@@ -18,7 +16,7 @@
 
 `Railway` 
 
-[REMOVED]
+*[REMOVED]*
 
 ### Variables
 `APP_ID` `API_HASH` `BOT_TOKEN`

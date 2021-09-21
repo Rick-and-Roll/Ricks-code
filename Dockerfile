@@ -10,7 +10,7 @@ RUN echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /
     apt -qq update
 
 # Install other dependencies
-RUN apt-get install libcrypt1
+RUN apt-get install libcrypt1 -y
 
 # Install HandBrakeCLI
 RUN apt-get install handbrake-cli -y

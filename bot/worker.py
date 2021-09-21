@@ -30,7 +30,9 @@ async def stats(e):
     except Exception as er:
         LOGS.info(er)
         await e.answer(
-            "Error 404: File | Info not Found 🤔\nMaybe Bot was restarted", cache_time=0, alert=True
+            "Error 404: File | Info not Found 🤔\nMaybe Bot was restarted",
+            cache_time=0,
+            alert=True,
         )
 
 
